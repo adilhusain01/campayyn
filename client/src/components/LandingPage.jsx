@@ -63,7 +63,7 @@ function LandingPage() {
           <div className="bg-white pixel-border p-4 text-black font-bold" style={{
             fontFamily: "'Orbitron', monospace"
           }}>
-          STT BLOCKCHAIN POWERED
+          SOMNIA BLOCKCHAIN POWERED
           </div>
         </div>
       </main>
