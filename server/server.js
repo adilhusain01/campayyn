@@ -142,7 +142,7 @@ const youtubeAPI = new YouTubeAPIManager();
 import { CAMPAIGN_MANAGER_ADDRESS, CAMPAIGN_MANAGER_ABI } from './utils/contract.js';
 
 console.log('⛓️ Initializing blockchain connection...');
-const provider = new ethers.JsonRpcProvider('https://shannon-explorer.somnia.network');
+const provider = new ethers.JsonRpcProvider('https://dream-rpc.somnia.network');
 console.log('🔐 Creating wallet instance...');
 const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 console.log(`💼 Wallet address: ${wallet.address}`);
