@@ -155,7 +155,7 @@ npm run dev            # nodemon; use `npm start` for plain node
 ```bash
 cd client
 npm install
-cp .env.example .env   # VITE_PRIVY_APP_ID, VITE_PRIVY_APP_SECRET, VITE_API_BASE_URL (e.g. http://localhost:3001)
+cp .env.example .env   # VITE_PRIVY_APP_ID, VITE_API_BASE_URL (e.g. http://localhost:3001)
 npm run dev            # http://localhost:5173
 ```
 
