@@ -130,3 +130,37 @@ The best brands are already making the switch. Every day you wait, your competit
 **Contract:** `0xE121b3613706daeab199598ef8B1CBeaDa811327`
 
 Launch your first campaign at https://campayyn.vercel.app
+----------
+
+## Getting Started (local development)
+
+**Prerequisites:** Node.js 20.19+ (the client uses Vite 7), npm, and a MongoDB connection string.
+
+```bash
+git clone git@github.com:adilhusain01/campayyn.git
+cd campayyn
+```
+
+### Server (`server/`, Express, default port 3001)
+
+```bash
+cd server
+npm install
+cp .env.example .env   # fill in YOUTUBE_API_KEY, PRIVATE_KEY, MONGO_URI, SUPADATA_API_KEY, GOOGLE_AI_API_KEY, ...
+npm run dev            # nodemon; use `npm start` for plain node
+```
+
+### Client (`client/`, React + Vite)
+
+```bash
+cd client
+npm install
+cp .env.example .env   # VITE_PRIVY_APP_ID, VITE_PRIVY_APP_SECRET, VITE_API_BASE_URL (e.g. http://localhost:3001)
+npm run dev            # http://localhost:5173
+```
+
+Other client scripts: `npm run build`, `npm run preview`, `npm run lint`.
+
+### Smart contract (`contracts/`)
+
+`contracts/CampaignManager.sol` is a standalone Solidity file (no Hardhat/Foundry project). Deploy it with Remix or your tool of choice, then set the resulting address wherever the server and client expect it.
